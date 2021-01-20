@@ -8,7 +8,7 @@ import java.util.Random;
  */
 
 
-public class PontoonBoard extends JFrame 
+public class PontoonBoard extends JFrame implements ActionListener
 
 {
 	//Components that are in the frame
@@ -16,9 +16,10 @@ public class PontoonBoard extends JFrame
 	private JPanel topPanel, bottomPanel;
 	private JLabel player;
 	private JLabel displayNumber;
-	private JLabel gridNumber;
+	//private JLabel gridNumber;
 	private JLabel counterLabel;
 	private JButton newGameButton;
+	private JButton disp;
 	private int rows, columns;
 	private Grid [][] gridSquares;
 	int counter = 0;
@@ -30,7 +31,7 @@ public class PontoonBoard extends JFrame
 	{
 		this.rows = rows;
 		this.columns = columns;
-		this.setSize(600,600); //creates the outer frame
+		this.setSize(600, 600); //creates the outer frame
 		
 		//Creates the top panel
 		topPanel = new JPanel();
@@ -39,22 +40,19 @@ public class PontoonBoard extends JFrame
 		
 		//Creates the bottom panel
 		bottomPanel = new JPanel();
-		bottomPanel.setLayout(new GridLayout(rows, columns));
-		bottomPanel.setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-		bottomPanel.setSize(500,500);
+		bottomPanel.setLayout(new GridLayout(rows, columns));		
+		//bottomPanel.setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
+		//bottomPanel.setSize(500,500);
 		
 		//Components for top panel
 		newGameButton = new JButton("New Game");
-		//newGameButton.addActionListener(this); //RTD		
+		newGameButton.addActionListener(this); //RTD		
 		int num = rand.nextInt(2) + 1;
 		String players = Integer.toString(num);
 		player = new JLabel("Player " + players +"'s turn");
 		
 		counterLabel = new JLabel("Counter: 0 ");
-		
-		
-		
-		
+						
 		
 		topPanel.add(newGameButton);
 		topPanel.add(player);
@@ -66,28 +64,56 @@ public class PontoonBoard extends JFrame
 		{						
 			for (int y = 0; y < rows; y++)
 			{
-				int cons = rand.nextInt(5) + 1;
-				String number = Integer.toString(cons);
-				gridNumber = new JLabel(number);
+				//int cons = rand.nextInt(5) + 1;
+				//String number = Integer.toString(cons);
+				//gridNumber = new JLabel(number);
+				//gridNumber.setFont(gridNumber.getFont().deriveFont(32f));
+				//disp = new JButton(number);
 				
 				gridSquares[x][y] = new Grid(x, y);
-				gridSquares[x][y].setSize(20, 20);
+				gridSquares[x][y].setColor(x+y);
+				//gridSquares[x][y].setB
+				String val = gridSquares[x][y].gridButton();
+				disp = new JButton(val);				
+				disp.setFont(disp.getFont().deriveFont(32f));				
+				//gridSquares[x][y].setSize(10, 100);
 				
-				bottomPanel.add(gridSquares[x][y]);
-				bottomPanel.add(gridNumber);
+				bottomPanel.add(disp);
 				
-				
+												
 				
 			}
 		}
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(topPanel, BorderLayout.NORTH);
 		getContentPane().add(bottomPanel, BorderLayout.CENTER);
+		pack();
 		
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setResizable(false);
+		setResizable(true);
 		setVisible(true);
+	}
+	
+	/* 
+	 * Action listener methods
+	 */
+	public void actionPerformed(ActionEvent aevt)
+	{
+		Object selected = aevt.getSource();
+		
+		if (selected.equals(newGameButton))
+		{
+			for (int x = 0; x < columns; x ++)
+			{
+				for (int y = 0; y < rows; y ++)
+				{
+					
+					//String val = gridSquares[x][y].gridButton();
+					gridSquares [x][y].setColor(x + y);
+				}
+			}
+		}
 	}
 }
 
