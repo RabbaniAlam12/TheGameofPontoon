@@ -23,7 +23,7 @@ public class PontoonBoard extends JFrame implements ActionListener
 	private int rows, columns;
 	private Grid [][] gridSquares;
 	int counter = 0;
-	int nums;
+	int nums, cons1, cons2, cons3, cons4, cons5, cons6, cons7, cons8, cons9, cons10, cons11, cons12, cons13, cons14, cons15, cons16, cons17, cons18, cons19, cons20, cons21, cons22, cons23, cons24, cons25;
 	int value;
 	String number;
 	
@@ -69,81 +69,104 @@ public class PontoonBoard extends JFrame implements ActionListener
 		
 		gridSquares = new Grid[rows][columns];
 		
-		int cons = rand.nextInt(5) + 1;
-		
-		button1 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons1 = rand.nextInt(5) + 1;
+		button1 = new JButton(Integer.toString(cons1));
 		button1.addActionListener(this);
 		
-		button2 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons2 = rand.nextInt(5) + 1;
+		button2 = new JButton(Integer.toString(cons2));
 		button2.addActionListener(this);
 		
-		button3 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons3 = rand.nextInt(5) + 1;
+		button3 = new JButton(Integer.toString(cons3));
 		button3.addActionListener(this);
 		
-		button4 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons4 = rand.nextInt(5) + 1;
+		button4 = new JButton(Integer.toString(cons4));
 		button4.addActionListener(this);
 		
-		button5 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons5 = rand.nextInt(5) + 1;
+		button5 = new JButton(Integer.toString(cons5));
 		button5.addActionListener(this);
 		
-		button6 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons6 = rand.nextInt(5) + 1;
+		button6 = new JButton(Integer.toString(cons6));
 		button6.addActionListener(this);
 		
-		button7 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons7 = rand.nextInt(5) + 1;
+		button7 = new JButton(Integer.toString(cons7));
 		button7.addActionListener(this);
 		
-		button8 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons8 = rand.nextInt(5) + 1;
+		button8 = new JButton(Integer.toString(cons8));
 		button8.addActionListener(this);
 		
-		button9 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons9 = rand.nextInt(5) + 1;
+		button9 = new JButton(Integer.toString(cons9));
 		button9.addActionListener(this);
 		
-		button10 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons10 = rand.nextInt(5) + 1;
+		button10 = new JButton(Integer.toString(cons10));
 		button10.addActionListener(this);
 		
-		button11 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons11 = rand.nextInt(5) + 1;
+		button11 = new JButton(Integer.toString(cons11));
 		button11.addActionListener(this);
 		
-		button12 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons12 = rand.nextInt(5) + 1;
+		button12 = new JButton(Integer.toString(cons12));
 		button12.addActionListener(this);
 		
-		button13 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons13 = rand.nextInt(5) + 1;
+		button13 = new JButton(Integer.toString(cons13));
 		button13.addActionListener(this);
 		
-		button14 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons14 = rand.nextInt(5) + 1;
+		button14 = new JButton(Integer.toString(cons14));
 		button14.addActionListener(this);
 		
-		button15 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons15 = rand.nextInt(5) + 1;
+		button15 = new JButton(Integer.toString(cons15));
 		button15.addActionListener(this);
 		
-		button16 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons16 = rand.nextInt(5) + 1;
+		button16 = new JButton(Integer.toString(cons16));
 		button16.addActionListener(this);
 		
-		button17 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons17 = rand.nextInt(5) + 1;
+		button17 = new JButton(Integer.toString(cons17));
 		button17.addActionListener(this);
 		
-		button18 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons18 = rand.nextInt(5) + 1;
+		button18 = new JButton(Integer.toString(cons18));
 		button18.addActionListener(this);
 		
-		button19 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons19 = rand.nextInt(5) + 1;
+		button19 = new JButton(Integer.toString(cons19));
 		button19.addActionListener(this);
 		
-		button20 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons20 = rand.nextInt(5) + 1;
+		button20 = new JButton(Integer.toString(cons20));
 		button20.addActionListener(this);
 		
-		button21 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons21 = rand.nextInt(5) + 1;
+		button21 = new JButton(Integer.toString(cons21));
 		button21.addActionListener(this);
 		
-		button22 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons22 = rand.nextInt(5) + 1;
+		button22 = new JButton(Integer.toString(cons22));
 		button22.addActionListener(this);
 		
-		button23 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons23 = rand.nextInt(5) + 1;
+		button23 = new JButton(Integer.toString(cons23));
 		button23.addActionListener(this);
 		
-		button24 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons24 = rand.nextInt(5) + 1;
+		button24 = new JButton(Integer.toString(cons24));
 		button24.addActionListener(this);
 		
-		button25 = new JButton(Integer.toString(rand.nextInt(5)+1));
+		cons25 = rand.nextInt(5) + 1;
+		button25 = new JButton(Integer.toString(cons25));
 		button25.addActionListener(this);
 		
 		bottomPanel.add(button1);
@@ -220,327 +243,468 @@ public class PontoonBoard extends JFrame implements ActionListener
 		
 		
 		if (selected.equals(button1)) {
+			counter += cons1;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
+				nums = nums + 1;
 				button1.setEnabled(false);
 				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
+				nums = nums - 1;
 				button1.setBackground(Color.RED);
 				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button2)) {
+			counter += cons2;
+			counterLabel.setText("Counter: " + counter);
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button2.setEnabled(false);
+				button2.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button2.setBackground(Color.RED);
+				button2.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button3)) {
+			counter += cons3;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button3.setEnabled(false);
+				button3.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button3.setBackground(Color.RED);
+				button3.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
+		
 		}
 		if (selected.equals(button4)) {
+			counter += cons4;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button4.setEnabled(false);
+				button4.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button4.setBackground(Color.RED);
+				button4.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button5)) {
+			counter += cons5;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button5.setEnabled(false);
+				button5.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button5.setBackground(Color.RED);
+				button5.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button6)) {
+			counter += cons6;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button6.setEnabled(false);
+				button6.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button6.setBackground(Color.RED);
+				button6.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button7)) {
+			counter += cons7;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button7.setEnabled(false);
+				button7.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button7.setBackground(Color.RED);
+				button7.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button8)) {
+			counter += cons8;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button8.setEnabled(false);
+				button8.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button8.setBackground(Color.RED);
+				button8.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button9)) {
+			counter += cons9;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button9.setEnabled(false);
+				button9.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button9.setBackground(Color.RED);
+				button9.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button10)) {
+			counter += cons10;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button10.setEnabled(false);
+				button10.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button10.setBackground(Color.RED);
+				button10.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button11)) {
+			counter += cons11;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button11.setEnabled(false);
+				button11.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button11.setBackground(Color.RED);
+				button11.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button12)) {
+			counter += cons12;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button12.setEnabled(false);
+				button12.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button12.setBackground(Color.RED);
+				button12.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button13)) {
+			counter += cons13;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button13.setEnabled(false);
+				button13.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button13.setBackground(Color.RED);
+				button13.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button14)) {
+			counter += cons14;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button14.setEnabled(false);
+				button14.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button14.setBackground(Color.RED);
+				button14.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button15)) {
+			counter += cons15;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button15.setEnabled(false);
+				button15.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button15.setBackground(Color.RED);
+				button15.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button16)) {
+			counter += cons16;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button16.setEnabled(false);
+				button16.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button16.setBackground(Color.RED);
+				button16.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button17)) {
+			counter += cons17;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button17.setEnabled(false);
+				button17.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button17.setBackground(Color.RED);
+				button17.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button18)) {
+			counter += cons18;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button18.setEnabled(false);
+				button18.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button18.setBackground(Color.RED);
+				button18.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button19)) {
+			counter += cons19;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button19.setEnabled(false);
+				button19.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button19.setBackground(Color.RED);
+				button19.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button20)) {
+			counter += cons20;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button20.setEnabled(false);
+				button20.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button20.setBackground(Color.RED);
+				button20.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
+		
 		if (selected.equals(button21)) {
+			counter += cons21;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button21.setEnabled(false);
+				button21.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button21.setBackground(Color.RED);
+				button21.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button22)) {
+			counter += cons22;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button22.setEnabled(false);
+				button22.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button22.setBackground(Color.RED);
+				button22.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button23)) {
+			counter += cons23;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button23.setEnabled(false);
+				button23.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button23.setBackground(Color.RED);
+				button23.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button24)) {
+			counter += cons24;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button24.setEnabled(false);
+				button24.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button24.setBackground(Color.RED);
+				button24.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
 		if (selected.equals(button25)) {
+			counter += cons25;
+			counterLabel.setText("Counter: " + counter);
+			
 			if (nums == 1) {
-				button1.setEnabled(false);
-				button1.setBackground(Color.GREEN);
-				player.setText("Player 2's turn");
+				nums = nums + 1;
+				button25.setEnabled(false);
+				button25.setBackground(Color.GREEN);
+				player.setText("Player" + nums + "'s turn");
 			}
 			else {
-				button1.setBackground(Color.RED);
-				button1.setEnabled(false);
-				player.setText("Player 1's turn");
+				nums = nums - 1;
+				button25.setBackground(Color.RED);
+				button25.setEnabled(false);
+				player.setText("Player" + nums + "'s turn");
 			}
 			
 		}
