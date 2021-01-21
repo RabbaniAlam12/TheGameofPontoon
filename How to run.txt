@@ -1,0 +1,10 @@
+From a console:
+- navigate to inside the src folder which is in Pontoon Assignment
+
+To compile the code:
+- type "javac *.java" and press enter.
+
+To run the code:
+- type "java Pontoon" and press enter. 
+
+Follow the instructions for the game and enjoy!!

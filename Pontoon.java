@@ -1,7 +1,9 @@
 /*
- *This is the main for the game of Pontoon
- *
+ * The Game of Pontoon
  * 
+ * This is the main class for the game. It calls the board with a fixed rows and columns.
+ * 
+ * @Author: Rabbani Alam
  */
 public class Pontoon 
 {	
